@@ -1,0 +1,15 @@
+.image-cards__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 282px);
+    justify-content: center;
+    gap: 19px 17px;
+    margin: 0 auto;
+    padding: 51px 0 68px;
+    list-style: none;
+}
+
+@media screen and (max-width: 992px) {
+    .image-cards__items {
+        padding: 36px 0 50px;
+    }
+}

@@ -1,0 +1,27 @@
+.popup__close-form {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    padding: 0;
+    background: url('../../../images/popup__close.svg') center no-repeat;
+    transition: opacity 0.3s ease-in-out;
+    background-size: cover;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.popup__close-form:hover {
+    opacity: .6;
+}
+
+@media screen and (max-width: 768px) {
+    .popup__close-form {
+        width: 20px;
+        height: 20px;
+        top: -36px;
+        right: 0px;
+    }
+}

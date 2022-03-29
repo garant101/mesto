@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Виталий Ефремов">
+    <meta name="description" content="Проект сайта о местах в России">
+    <meta name="keywords" content="места в России">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Mesto</title>
+</head>
+
+<body class="root js-root">
+    <div class="page">
+        <header class="header">
+            <a href="#" class="header__link">
+                <img src="./images/logo.svg" alt="Логотип" class="header__logo">
+            </a>
+        </header>
+        <main class="content">
+            <section class="profile">
+                <img src="./images/profile__avatar.jpg" alt="Изображение" class="profile__avatar">
+                <div class="profile__info">
+                    <div class="profile__item-wrapper">
+                        <h1 class="profile__title">Жак-Ив Кусто</h1>
+                        <button class="profile__text-edit-btn js-profile__text-edit-btn" type="button"></button>
+                    </div>
+                    <p class="profile__subtitle">Исследователь океана</p>
+                </div>
+                <button class="profile__add-btn" type="button"></button>
+            </section>
+            <section class="image-cards" aria-label="Карточки">
+                <ul class="image-cards__items">
+                    <li class="image-cards__item">
+                        <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск"
+                            class="image-cards__picture">
+                        <div class="image-cards__label">
+                            <h2 class="image-cards__title">Карачаевск</h2>
+                            <button class="image-cards__like"></button>
+                        </div>
+                    </li>
+                    <li class="image-cards__item">
+                        <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Эльбрус"
+                            class="image-cards__picture">
+                        <div class="image-cards__label">
+                            <h2 class="image-cards__title">Гора Эльбрус</h2>
+                            <button class="image-cards__like"></button>
+                        </div>
+                    </li>
+                    <li class="image-cards__item">
+                        <img src="./images/kirill-pershin-1556355-unsplash.png" alt="Домбай"
+                            class="image-cards__picture">
+                        <div class="image-cards__label">
+                            <h2 class="image-cards__title">Домбай</h2>
+                            <button class="image-cards__like"></button>
+                        </div>
+                    </li>
+                    <li class="image-cards__item">
+                        <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Эльбрус"
+                            class="image-cards__picture">
+                        <div class="image-cards__label">
+                            <h2 class="image-cards__title">Эльбрус</h2>
+                            <button class="image-cards__like"></button>
+                        </div>
+                    </li>
+                    <li class="image-cards__item">
+                        <img src="./images/kirill-pershin-1556355-unsplash.png" alt="Домбай"
+                            class="image-cards__picture">
+                        <div class="image-cards__label">
+                            <h2 class="image-cards__title">Домбай</h2>
+                            <button class="image-cards__like"></button>
+                        </div>
+                    </li>
+                    <li class="image-cards__item">
+                        <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Карачаевск"
+                            class="image-cards__picture">
+                        <div class="image-cards__label">
+                            <h2 class="image-cards__title">Карачаевск</h2>
+                            <button class="image-cards__like"></button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">© 2020 Mesto Russia</p>
+        </footer>
+        <div class="popup js-popup">
+            <div class="popup__container">
+                <form class="popup__form js-popup__form" name="edit-form">
+                    <h2 class="popup__title">Редактировать профиль</h2>
+                    <input type="text" class="popup__input js-popup__input-name" placeholder="Имя">
+                    <input type="text" class="popup__input js-popup__input-job" placeholder="Профессия">
+                    <button class="popup__submit-btn js-popup__close-form" type="submit">Сохранить</button>
+                </form>
+                <button class="popup__close-form js-popup__close-form" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>
