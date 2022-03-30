@@ -1,4 +1,4 @@
-let openPopupBtn = document.querySelector(".js-profile__btn-edit");
+let openPopupBtn = document.querySelector(".profile__btn-edit");
 let noScroll = document.querySelector(".js-root");
 let popup = document.querySelector(".js-popup");
 let closeFormBtn = document.querySelector(".js-popup__close-form");
