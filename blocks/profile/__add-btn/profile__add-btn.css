@@ -7,8 +7,8 @@
     height: 50px;
     transition: opacity 0.3s ease-in-out;
     background: url('../../../images/add-button.svg') center no-repeat;
+    background-size: 22px;
     cursor: pointer;
-    background-size: contain;
     outline: none;
 }
 
@@ -22,4 +22,4 @@
         margin: 32px auto 0;
     }
 }
-    
+
