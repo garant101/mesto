@@ -11,11 +11,19 @@ let profileSubtitle = document.querySelector('.profile__subtitle');
 function openPopup() {
     popup.classList.add('popup_active');
     noScroll.classList.add('root_no-scroll');
+    document.addEventListener('keyup', onDocumentKeyUp);
 }
 
 function closeForm() {
     popup.classList.remove('popup_active');
     noScroll.classList.remove('root_no-scroll');
+    document.removeEventListener('keyup', onDocumentKeyUp);
+}
+
+function onDocumentKeyUp(event) {
+  if (event.key === ESK_KEY) {
+    closeForm();
+  }
 }
 
 popupInputName.value = profileTitle.textContent;
@@ -32,3 +40,5 @@ function formSubmitHandler(evt) {
 openPopupBtn.addEventListener('click', openPopup);
 closeFormBtn.addEventListener('click', closeForm);
 popupForm.addEventListener('submit', formSubmitHandler);
+
+const ESK_KEY = 'Escape';
