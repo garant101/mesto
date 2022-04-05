@@ -12,7 +12,7 @@
     <title>Mesto</title>
 </head>
 
-<body class="root js-root">
+<body class="root">
     <div class="page">
         <header class="header">
             <a href="#" class="header__link">
@@ -21,7 +21,7 @@
         </header>
         <main class="content">
             <section class="profile">
-                <img src="./images/profile__avatar.jpg" alt="Изображение" class="profile__avatar">
+                <img src="./images/profile__avatar.jpg" alt="Аватарка Жак-Ив Кусто" class="profile__avatar">
                 <div class="profile__info">
                     <div class="profile__item-wrapper">
                         <h1 class="profile__title">Жак-Ив Кусто</h1>
@@ -39,7 +39,7 @@
                             class="image-cards__picture">
                         <div class="image-cards__label">
                             <h2 class="image-cards__title">Карачаевск</h2>
-                            <button class="image-cards__like"></button>
+                            <button class="image-cards__like" type="button"></button>
                         </div>
                     </li>
                     <li class="image-cards__item">
@@ -47,7 +47,7 @@
                             class="image-cards__picture">
                         <div class="image-cards__label">
                             <h2 class="image-cards__title">Гора Эльбрус</h2>
-                            <button class="image-cards__like"></button>
+                            <button class="image-cards__like" type="button"></button>
                         </div>
                     </li>
                     <li class="image-cards__item">
@@ -55,7 +55,7 @@
                             class="image-cards__picture">
                         <div class="image-cards__label">
                             <h2 class="image-cards__title">Домбай</h2>
-                            <button class="image-cards__like"></button>
+                            <button class="image-cards__like" type="button"></button>
                         </div>
                     </li>
                     <li class="image-cards__item">
@@ -63,7 +63,7 @@
                             class="image-cards__picture">
                         <div class="image-cards__label">
                             <h2 class="image-cards__title">Эльбрус</h2>
-                            <button class="image-cards__like"></button>
+                            <button class="image-cards__like" type="button"></button>
                         </div>
                     </li>
                     <li class="image-cards__item">
@@ -71,7 +71,7 @@
                             class="image-cards__picture">
                         <div class="image-cards__label">
                             <h2 class="image-cards__title">Домбай</h2>
-                            <button class="image-cards__like"></button>
+                            <button class="image-cards__like" type="button"></button>
                         </div>
                     </li>
                     <li class="image-cards__item">
@@ -79,7 +79,7 @@
                             class="image-cards__picture">
                         <div class="image-cards__label">
                             <h2 class="image-cards__title">Карачаевск</h2>
-                            <button class="image-cards__like"></button>
+                            <button class="image-cards__like" type="button"></button>
                         </div>
                     </li>
                 </ul>
@@ -88,15 +88,15 @@
         <footer class="footer">
             <p class="footer__copyright">© 2020 Mesto Russia</p>
         </footer>
-        <div class="popup js-popup">
+        <div class="popup">
             <div class="popup__container">
-                <form class="popup__form js-popup__form" name="edit-form">
+                <form class="popup__form" name="edit-form">
                     <h2 class="popup__title">Редактировать профиль</h2>
-                    <input type="text" class="popup__input js-popup__input-name" placeholder="Имя">
-                    <input type="text" class="popup__input js-popup__input-job" placeholder="Профессия">
-                    <button class="popup__submit-btn js-popup__submit-btn" type="submit">Сохранить</button>
+                    <input type="text" class="popup__input_name" placeholder="Имя" name="name">
+                    <input type="text" class="popup__input_job" placeholder="Профессия" name="job">
+                    <button class="popup__submit-btn" type="submit">Сохранить</button>
                 </form>
-                <button class="popup__close-form js-popup__close-form" type="button"></button>
+                <button class="popup__close-form" type="button"></button>
             </div>
         </div>
     </div>
