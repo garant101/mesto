@@ -1,4 +1,4 @@
-.popup__input_job {
+.popup__input-job {
     margin-bottom: 30px;
     padding-bottom: 8px;
     font-style: normal;
@@ -11,6 +11,6 @@
     box-sizing: border-box;
 }
 
-.popup__input_job:last-of-type {
+.popup__input-job:last-of-type {
     margin-bottom: 46px;
 }
